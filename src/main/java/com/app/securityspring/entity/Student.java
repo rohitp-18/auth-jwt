@@ -1,0 +1,18 @@
+package com.app.securityspring.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Student {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public  Long id;
+
+    public  String name;
+
+    public  Integer score;
+}
